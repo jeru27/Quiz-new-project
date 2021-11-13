@@ -147,10 +147,10 @@ let questions = [
     },
     {
         numb: 13,
-        question: "What does RGB color stand stand for?",
-        answer: "Red, green, blue.",
+        question: "What does RGB color stand for?",
+        answer: "Red, green, blue",
         options: [
-            "Red, gray , blue",
+            "Red, gray, blue",
             "Rose, green, brown",
             "Red, green, blue",
             "Rose, gray, brown"

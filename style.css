@@ -21,11 +21,10 @@ body{
     transform: translate(-50%, -50%);
     box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2),
                 0px 6px 20px 0 rgba(0,0,0,0.19);
-    transition: all 0.3s ease;
 }
 
 .info_box.activeInfo,
-.quiz_box.activeQuiz
+.quiz_box.activeQuiz,
 .result_box.activeResult{
     z-index: 5;
     opacity: 1;
@@ -53,6 +52,7 @@ body{
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.3s ease;
 }
 
 .info_box .info_title{
@@ -67,7 +67,7 @@ body{
 }
 
 .info_box .info_list{
-    padding: 15px 35px;
+    padding: 15px 30px;
 
 }
 
@@ -100,6 +100,7 @@ body{
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .buttons button.restart{
@@ -188,17 +189,17 @@ body{
     background: rgb(99, 0, 102);
 }
 
-.quiz_box section{
+section{
     padding: 35px 30px 20px 30px;
     background: #fff;
 }
 
-.quiz_box section .que_text{
+section .que_text{
     font-size: 25px;
     font-weight: 600;
 }
 
-.quiz_box section .option_list{
+section .option_list{
     padding: 20px 0;
     display: block;
 }
@@ -238,6 +239,7 @@ section .option_list .option:hover{
     font-size: 13px;
     line-height: 24px;
     pointer-events: none;
+    transition: all 0.3s ease;
 }
 
 .option_list .option .icon.tick{
@@ -268,7 +270,7 @@ section .option_list .option:hover{
     pointer-events: none;
 }
 
-.quiz_box footer{
+footer{
     height: 60px;
     width: 100%;
     padding: 0 30px;
@@ -278,7 +280,7 @@ section .option_list .option:hover{
     justify-content: space-between;
 }
 
-.quiz_box footer .total_que span{
+footer .total_que span{
     display: flex;
     user-select: none;
 }
@@ -288,12 +290,11 @@ footer .total_que span p{
     padding: 0 5px;
 }
 
-.total_que span p:first-child{
+footer .total_que span p:first-child{
     padding-left: 0px;
 }
 
 footer .next_btn{
-    display: none;
     height: 40px;
     padding: 0 13px;
     font-size: 18px;
@@ -324,6 +325,7 @@ footer .next_btn:hover{
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.3s ease;
 }
 
 .result_box .icon{
@@ -344,7 +346,7 @@ footer .next_btn:hover{
     font-weight: 500;
 }
 
-.score_text span p{
+.result_box .score_text span p{
     font-weight: 600;
     padding: 0 4px;
 }
