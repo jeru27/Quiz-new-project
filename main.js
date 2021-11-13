@@ -27,7 +27,7 @@ continue_btn.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); //show the quiz box 
     showQuestions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
-    startTimer(10); //calling startTimer function
+    startTimer(15); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
 }
 
@@ -35,7 +35,7 @@ let que_count = 0;
 let que_numb = 1;
 let counter;
 let counterLine;
-let timeValue = 10;
+let timeValue = 15;
 let widthValue = 0;
 let userScore = 0;
 
@@ -51,7 +51,7 @@ restart_quiz.onclick = ()=>{
     result_box.classList.remove("activeResult"); //hide result box
     let que_count = 0;
     let que_numb = 1;
-    let timeValue = 10;
+    let timeValue = 15;
     let widthValue = 0;
     
     showQuestions(que_count);
@@ -204,9 +204,9 @@ function startTimer(time){
 function startTimerLine(time){
     counterLine = setInterval(timer, 29);
     function timer(){
-        time += 1; 
+        timeLine += 1; 
         timeLine.style.width = time + "px"; //increasing width of time_line with px by time value
-        if(time < 549){ //if time value is greater than 549
+        if(time > 549){ //if time value is greater than 549
             clearInterval(counterLine); //clear counterLine
         }
     }
